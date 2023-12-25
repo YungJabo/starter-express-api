@@ -1,0 +1,77 @@
+{
+  "name": "webtorrent-hybrid",
+  "type": "module",
+  "description": "Streaming torrent client",
+  "version": "5.0.2",
+  "author": {
+    "name": "WebTorrent LLC",
+    "email": "feross@webtorrent.io",
+    "url": "https://webtorrent.io"
+  },
+  "bin": "./bin/cmd.js",
+  "bugs": {
+    "url": "https://github.com/webtorrent/webtorrent-hybrid/issues"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "create-torrent": "^5.0.0",
+    "express": "^4.18.2",
+    "node-pre-gyp": "^0.17.0",
+    "rimraf": "^5.0.5",
+    "webtorrent": "^1.0.0",
+    "webtorrent-cli": "^4.0.0",
+    "wrtc": "^0.4.6"
+  },
+  "devDependencies": {
+    "@webtorrent/semantic-release-config": "1.0.7",
+    "semantic-release": "19.0.2",
+    "standard": "*"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "homepage": "https://webtorrent.io",
+  "keywords": [
+    "bittorrent",
+    "bittorrent client",
+    "download",
+    "mad science",
+    "streaming",
+    "torrent",
+    "webrtc",
+    "webrtc data",
+    "webtorrent"
+  ],
+  "license": "MIT",
+  "exports": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webtorrent/webtorrent-hybrid.git"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/feross"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/feross"
+    },
+    {
+      "type": "consulting",
+      "url": "https://feross.org/support"
+    }
+  ],
+  "renovate": {
+    "extends": [
+      "github>webtorrent/renovate-config"
+    ]
+  },
+  "release": {
+    "extends": "@webtorrent/semantic-release-config"
+  }
+}
